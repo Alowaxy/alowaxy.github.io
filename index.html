@@ -46,6 +46,7 @@
 								<h3>Undergraduate Research Assistant</h3>
 								<p>TRACE Laboratory - Purdue University, School of Mechanical Engineering.</p>
 								<p>Assisting with research on the control of a wearable ankle exoskeleton using both a MAML and transformer-based gait and terrian prediction algorithm.</p>
+								<p>Utilizing PyTorch. Learning the fundamentals of machine learning for robotics applications.</p>
 							</section>
 						</div>
 					</div>
@@ -68,10 +69,13 @@
 								
 								<a href="#" class="image fit"><img src="images/2DOF_Wrist_Photo1.jpg" alt="Wrist Physical" /></a>
 
-								<a href="#" class="image fit"><img src="images/my 2 dof humanoid wrist mechanism prototype poster.jpg" alt="Wrist Physical" /></a>
+								<a href="#" class="image fit"><img src="images/my 2 dof humanoid wrist mechanism prototype poster.jpg" alt="Wrist Poster" /></a>
 								<h3><a href="#">2-DOF Humanoid Wrist Mechanism</a></h3>
 								<p>Individual Club Project</p>
-								<p>Designed, modeled and fabricated a 2-degree-of-freedom wrist using SolidWorks for the Humanoid Robot Club. Handled the CAD assembly and the integration of 3D-printed components.</p>
+								<p>Designed, modeled and fabricated a 2-degree-of-freedom wrist prototype using SolidWorks for the Humanoid Robot Club. Handled the CAD assembly and the integration of 3D-printed components.</p>
+								<p>Overview: I wanted to design a mechanism that allowed for more complicated and precise movement of a humanoid robot's hand. Thus, some sort of wrist mechanism was the first and simpliest solution that came to my mind. Since the wrist lies far from the shoulder, it should be as light as possible in order to create a smaller moment to reduce additional power usage on the shoulder motor.</p>
+								<p>Design choices: There were plans to incorporate roll into the either the elbow or shoulders of the humanoid, so I decided to focus on creating a wrist with yaw and pitch. In order to prevent the wrist from being back-driven while also using no additional power, I decided on using 2 small linear actuators that have an internal locking mechanism instead of pneumatics, hydraulics or rotatory motors with a slider-crank linkage. This configuration of the 2 linear actuators with spherical joints on the ends, enable both yaw and pitch.</p>
+								<p>Challenges: I initially used a spherical joint to mount the end effector (where the hand will be attached). However, I realized that I would have an end effector with 2 active DOF with 1 passive DOF. This meant the end effector would roll when acted on by an external force (the hand would free to rotate when picking things up, etc). I fixed the issue by designing a custom yaw-pitch connection piece that elimated the passive degree of freedom.</p>
 							</article>
 						</div>
 						<div class="col-6 col-12-small">
