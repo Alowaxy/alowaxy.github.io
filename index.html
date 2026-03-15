@@ -19,102 +19,63 @@
 		<article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/20250709_131511.jpg" alt="Alex Wang" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>Alex Wang</strong>.</h1>
-							</header>
-							<p>I'm a mechanical engineering student at Purdue University with a strong focus on mechanisms, machine design, and controls. I am passionate about applying these skills within the robotics and automotive industries, and I am committed to making a positive impact on the world.</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
-						</div>
-					</div>
-				</div>
-			</article>
+    <div class="col-6 col-12-small">
+        <article class="box style2">
+            <header>
+                <h3>2-DOF Humanoid Wrist Mechanism Prototype</h3>
+            </header>
+            <p>Designed, modeled and fabricated a 2-degree-of-freedom wrist prototype using SolidWorks for the Humanoid Robot Club. Handled the CAD assembly and the integration of 3D-printed components.</p>
+            
+            <a href="#" class="image featured"><img src="images/2DOF_Wrist_CAD_img.png" alt="2-DOF Wrist Mechanism CAD" /></a>
+            <a href="#" class="image fit"><img src="images/2DOF_Wrist_Photo1.jpg" alt="Wrist Physical" /></a>
+            <a href="#" class="image fit"><img src="images/my 2 dof humanoid wrist mechanism prototype poster.jpg" alt="Wrist Poster" /></a>
+            
+            <p><strong>Overview:</strong> I engineered this mechanism to enable complex hand movements while ensure that it remains lightweight, minimizing the moment arm to reduce power consumption on the shoulder motors.</p>
+            <p><strong>Design Implementation:</strong> To prevent back-driving without constant power draw, I utilized two small linear actuators with internal locking mechanisms rather than pneumatics, hydraulics or even rotary motors coupled with a slider-crank linkage. This configuration, paired with spherical joints, provides active control over yaw and pitch.</p>
+            <p><strong>Technical Challenges:</strong> The initial design used a central spherical joint to mount the end effector, which inadvertently introduced a passive roll degree of freedom. I resolved this by designing a custom yaw-pitch connection piece in SOLIDWORKS to eliminate the passive rotation, ensuring the end effector remains stable under external loads.</p>
+        </article>
+    </div>
 
-		<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Research & Experience</h2>
-						<p>Focusing on control systems and reinforcement learning for robotics.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-microchip"></span>
-								<h3>Undergraduate Research Assistant</h3>
-								<p>TRACE Laboratory - Purdue University, School of Mechanical Engineering.</p>
-								<p>Assisting with research on the control of a wearable ankle exoskeleton using both a MAML and transformer-based gait and terrian prediction algorithm.</p>
-								<p>Developing a technical foundation in machine learning for robotics through the implementation of predictive algorithms within a PyTorch framework.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<a href="#portfolio" class="button large scrolly">See my hardware projects</a>
-					</footer>
-				</div>
-			</article>
-
-		<article id="portfolio" class="wrapper style3">
-    <div class="container">
-        <header>
-            <h2>Mechanical Projects</h2>
-            <p>Recent hardware designs, CAD models, and functional prototypes.</p>
-        </header>
-        <div class="row">
-            <div class="col-6 col-12-small">
-                <article class="box style2">
-                    <header>
-                        <h3>2-DOF Humanoid Wrist Mechanism Prototype</h3>
-                    </header>
-                    <p>Designed, modeled and fabricated a 2-degree-of-freedom wrist prototype using SolidWorks for the Humanoid Robot Club. Handled the CAD assembly and the integration of 3D-printed components.</p>
-                    
-                    <a href="#" class="image featured"><img src="images/2DOF_Wrist_CAD_img.png" alt="2-DOF Wrist Mechanism CAD" /></a>
-                    <a href="#" class="image fit"><img src="images/2DOF_Wrist_Photo1.jpg" alt="Wrist Physical" /></a>
-                    <a href="#" class="image fit"><img src="images/my 2 dof humanoid wrist mechanism prototype poster.jpg" alt="Wrist Poster" /></a>
-                    
-                    <p><strong>Overview:</strong> I engineered this mechanism to enable complex hand movements while ensure that it remains lightweight, minimizing the moment arm to reduce power consumption on the shoulder motors.</p>
-                    <p><strong>Design Implementation:</strong> To prevent back-driving without constant power draw, I utilized two small linear actuators with internal locking mechanisms rather than pneumatics, hydraulics or even rotary motors coupled with a slider-crank linkage. This configuration, paired with spherical joints, provides active control over yaw and pitch.</p>
-                    <p><strong>Technical Challenges:</strong> The initial design used a central spherical joint to mount the end effector, which inadvertently introduced a passive roll degree of freedom. I resolved this by designing a custom yaw-pitch connection piece in SOLIDWORKS to eliminate the passive rotation, ensuring the end effector remains stable under external loads.</p>
-                </article>
-
-                <article class="box style2" style="margin-top: 2em;">
-                    <header>
-                        <h3>1 DOF Pure Rigid Body Robot Finger Mechanism Design</h3>
-                    </header>
-                    <p>Designed a novel 1 DOF self-curling robotic finger mechanism comprised of 7 rigid body links.</p>
-                    <div class="image featured">
-                        <video width="100%" height="auto" autoplay loop muted playsinline>
-                            <source src="videos/7 link pure rigid body robot finger mechanism demonstration.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <a href="#" class="image fit"><img src="images/Kinematic Diagram of My Pure Rigid Body 7 Link 1 DOF Robot Finger Mechanism.jpg" alt="Kinematic Diagram of Finger Mechanism" /></a>
-                    <a href="#" class="image fit"><img src="images/My Rigid Body Body Finger Design - Finger Extended.png" alt="Extended Finger" /></a>
-                    <a href="#" class="image fit"><img src="images/My Rigid Body Body Finger Design - Finger Curled.png" alt="Curled Finger" /></a>
-                    <p><strong>Overview: </strong> I wanted to design a finger mechanism with 1 active DOF that automatically closed while using only rigid body linkages.</p>
-                </article>
+    <div class="col-6 col-12-small">
+        <article class="box style2">
+            <header>
+                <h3>Handheld Coxial Contra-Rotating Fan</h3>
+            </header>
+            <p>Currently designing a handheld contra-rotating fan powered by a single motor. Designed and modeled a custom bevel gear transmission system in SolidWorks to achieve synchronized counter-rotation.</p>
+            
+            <a href="#" class="image fit"><img src="images/3-15-Fan-Non-Transparent-View-Front.png" alt="Contra-Rotating Fan Non Transparent" /></a>
+            <a href="#" class="image fit"><img src="images/3-15-Fan-Angled-View-Frontal.png" alt="Contra-Rotating Fan Non Transparent" /></a>
+            <a href="#" class="image fit"><img src="images/3-15-Fan-Angled-View-Rear.png" alt="Contra-Rotating Fan Non Transparent Rear" /></a>
+            <a href="#" class="image fit"><img src="images/3-15-Fan-Internal-Core-Mechanism-View-Front.png" alt="Mechanism front" /></a>
+            <a href="#" class="image fit"><img src="images/3-15-Fan-Internal-Core-Mechanism-View-Rear.png" alt="Mechanism rear" /></a>
+            
+            <p><strong>Overview:</strong> One reason why coxial contra-rotating propelers are used on aircrafts is because they provide more direct linear thrust. I wanted to see if a handheld fan that used the same concept would have more direct airflow while also spinning at a lower RPM.</p>
+            <p><strong>Design Implementation:</strong> I designed a custom gear box with 1 motor and 3 90-degree bevel gears with an equal number of teeth. Ball-bearings are also implemented to reduce friction. </p>
+            <p><strong>Technical Challenges:</strong> I anticipate issues with friction, vibration, heat and fit. </p>
+        </article>
+    </div>
+</div> <div class="row">
+    <div class="col-6 col-12-small">
+        <article class="box style2">
+            <header>
+                <h3>1 DOF Pure Rigid Body Robot Finger Mechanism Design</h3>
+            </header>
+            <p>Designed a novel 1 DOF self-curling robotic finger mechanism comprised of 7 rigid body links.</p>
+            
+            <div class="image featured">
+                <video width="100%" height="auto" autoplay loop muted playsinline>
+                    <source src="videos/7 link pure rigid body robot finger mechanism demonstration.mp4" type="video/mp4">
+                </video>
             </div>
-
-            <div class="col-6 col-12-small">
-                <article class="box style2">
-                    <header>
-                        <h3>Handheld Coxial Contra-Rotating Fan</h3>
-                    </header>
-                    <p>Currently designing a handheld contra-rotating fan powered by a single motor. Designed and modeled a custom bevel gear transmission system in SolidWorks to achieve synchronized counter-rotation.</p>
-                    
-                    <a href="#" class="image fit"><img src="images/3-15-Fan-Non-Transparent-View-Front.png" alt="Contra-Rotating Fan Non Transparent" /></a>
-                    <a href="#" class="image fit"><img src="images/3-15-Fan-Angled-View-Frontal.png" alt="Contra-Rotating Fan Non Transparent" /></a>
-                    <a href="#" class="image fit"><img src="images/3-15-Fan-Angled-View-Rear.png" alt="Contra-Rotating Fan Non Transparent Rear" /></a>
-                    <a href="#" class="image fit"><img src="images/3-15-Fan-Internal-Core-Mechanism-View-Front.png" alt="Mechanism front" /></a>
-                    <a href="#" class="image fit"><img src="images/3-15-Fan-Internal-Core-Mechanism-View-Rear.png" alt="Mechanism rear" /></a>
-                    
-                    <p><strong>Overview:</strong> One reason why coxial contra-rotating propelers are used on aircrafts is because they provide more direct linear thrust. I wanted to see if a handheld fan that used the same concept would have more direct airflow while also spinning at a lower RPM.</p>
-                    <p><strong>Design Implementation:</strong> I designed a custom gear box with 1 motor and 3 90-degree bevel gears with an equal number of teeth. Ball-bearings are also implemented to reduce friction. </p>
-                    <p><strong>Technical Challenges:</strong> I anticipate issues with friction, vibration, heat and fit. </p>
-                </article>
-            </div>
-        </div>
+            
+            <a href="#" class="image fit"><img src="images/Kinematic Diagram of My Pure Rigid Body 7 Link 1 DOF Robot Finger Mechanism.jpg" alt="Kinematic Diagram of Finger Mechanism" /></a>
+            <a href="#" class="image fit"><img src="images/My Rigid Body Body Finger Design - Finger Extended.png" alt="Extended Finger" /></a>
+            <a href="#" class="image fit"><img src="images/My Rigid Body Body Finger Design - Finger Curled.png" alt="Curled Finger" /></a>
+        
+            <p><strong>Overview: </strong> I wanted to design a finger mechanism with 1 active DOF that automatically closed while using only rigid body linkages.</p>
+        </article>
+    </div>
+</div> ```
         <footer>
             <a href="Alexander Wang - Resume Jan 2026.pdf" target="_blank" class="button large">View My Resume</a>
         </footer>
