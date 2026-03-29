@@ -17,6 +17,7 @@
 				<ul class="container">
 					<li><a href="#top">About</a></li>
 					<li><a href="#work">Research</a></li>
+					<li><a href="#software">Software Work</a></li> 
 					<li><a href="#portfolio">Mechanical Projects</a></li>
 				</ul>
 			</nav>
@@ -56,11 +57,31 @@
 						</div>
 					</div>
 					<footer>
-						<a href="#portfolio" class="button large scrolly">See my hardware projects</a>
+    					<a href="#software" class="button large scrolly">See my software work</a>
 					</footer>
-				</div>
+		<article id="software" class="wrapper style2">
+			    <div class="container">
+			        <header>
+			            <h2>Software & Computation</h2>
+			            <p>Machine learning implementations and robotic simulations.</p>
+			        </header>
+			        <div class="row aln-center">
+			            <div class="col-12">
+			                <section class="box style1">
+			                    <span class="icon featured fa-code"></span>
+			                    <h3>Inverse Kinematics Solver using Supervised Learning (PyTorch) - Personal Project</h3>
+			                    <p>Learned fundamental machine learning and supervised learning concepts through the development of an inverse kinematics solver for a 2 degree of freedom robot arm.</p>
+			                    <hr />
+			                    <p><strong>Overview:</strong> This project was a hands-on exploration of machine learning concepts using PyTorch. Using object-oriented programming in python, I initially created a forward kinematics solver, manually generated joint angle data, and used it as input for training a simple neural network model. The model was built using PyTorch and was trained with supervised learning to predict joint angles from end effector positions. I designed the neural network with nn.Linear layers and used the ReLU activation function. For optimization, I employed the Adam optimizer and used mean squared error loss as the criterion. With 1200 points of data and 1200 training loops, the model achieved decent accuracy with an average error of roughly 4.64%. The model accuracy can be improved by using a larger data set, more training loops and using more layers with double the amount of neurons.</p>
+			                </section>
+			            </div>
+			        </div>
+			        <footer>
+			            <a href="#portfolio" class="button large scrolly">See my hardware projects</a>
+			        </footer>
+			    </div>
 			</article>
-
+		
 		<article id="portfolio" class="wrapper style3">
 			    <div class="container">
         <header>
@@ -81,13 +102,13 @@
                     
                     <p><strong>Overview:</strong> I engineered this mechanism to enable complex hand movements while ensure that it remains lightweight, minimizing the moment arm to reduce power consumption on the shoulder motors.</p>
                     <p><strong>Design Implementation:</strong> To prevent back-driving without constant power draw, I utilized two small linear actuators with internal locking mechanisms rather than pneumatics, hydraulics or even rotary motors coupled with a slider-crank linkage. This configuration, paired with spherical joints, provides active control over yaw and pitch.</p>
-                    <p><strong>Technical Challenges:</strong> The initial design used a central spherical joint to mount the end effector, which inadvertently introduced a passive roll degree of freedom. I resolved this by designing a custom yaw-pitch connection piece in SolidWorks to eliminate the passive rotation, ensuring the end effector remains stable under external loads.</p>
+                    <p><strong>Technical Challenges:</strong> The initial design used a central spherical joint to mount the end effector, which inadvertently introduced a passive roll degree of freedom. I fixed this by designing a custom yaw-pitch connection piece in SolidWorks to eliminate the passive rotation, ensuring the end effector remains stable under external loads.</p>
                 </article>
                 <article class="box style2" style="margin-top: 2em;">
                     <header>
                         <h3>1 DOF Pure Rigid Body Robot Finger Mechanism Design</h3>
                     </header>
-                    <p>Designed a novel 1 DOF self-curling robotic finger mechanism comprised of 7 rigid body links.</p>
+                    <p>Designed a novel 1-DOF self-curling robotic finger mechanism comprised of 7 rigid body links.</p>
                     <div class="image featured">
                         <video width="100%" height="auto" autoplay loop muted playsinline>
                             <source src="videos/7 link pure rigid body robot finger mechanism demonstration.mp4" type="video/mp4">
@@ -97,6 +118,7 @@
                     <a href="#" class="image fit"><img src="images/My Rigid Body Body Finger Design - Finger Extended.png" alt="Extended Finger" /></a>
                     <a href="#" class="image fit"><img src="images/My Rigid Body Body Finger Design - Finger Curled.png" alt="Curled Finger" /></a>
                     <p><strong>Overview: </strong> I wanted to design a finger mechanism with 1 active DOF that automatically closed while using only rigid body linkages.</p>
+					<p><strong>Design Implementation: </strong> I started by sketching out multiple links, visualizing the motion, and then adjusting the arrangement until I believed I had achieved the desired motion. I then modeled the links in SolidWorks, constrained them and in assembly and tested the motion.</p>
                 </article>
             </div>
 
@@ -113,7 +135,7 @@
                     <a href="#" class="image fit"><img src="images/3-15-Fan-Internal-Core-Mechanism-View-Front.png" alt="Mechanism front" /></a>
                     <a href="#" class="image fit"><img src="images/3-15-Fan-Internal-Core-Mechanism-View-Rear.png" alt="Mechanism rear" /></a>
                     
-                    <p><strong>Overview:</strong> One reason why coaxial contra-rotating propelers are used on aircrafts is because they provide more direct linear thrust. I wanted to see if a handheld fan that used the same concept would have more direct airflow while also spinning at a lower RPM.</p>
+                    <p><strong>Overview:</strong> One reason why coaxial contra-rotating propelers are used on aircrafts is because they provide more direct linear thrust. I wanted to see if a handheld fan that used the same concept would have more direct airflow while also spinning at a lower RPM for power conservation.</p>
                     <p><strong>Design Implementation:</strong> I designed a custom gear box with 1 motor and 3 90-degree bevel gears with an equal number of teeth. Ball-bearings are also implemented to reduce friction. </p>
                     <p><strong>Technical Challenges:</strong> I anticipate issues with friction, vibration, heat, and fit. </p>
                 </article>
